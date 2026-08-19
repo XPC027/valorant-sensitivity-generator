@@ -26,6 +26,52 @@
 
 ---
 
+## 📸 Preview / 项目预览
+
+### 🏠 Personalized Calibration / 个性化瞄准档案
+
+<div align="center">
+  <a href="https://xpc027.github.io/valorant-sensitivity-generator/">
+    <img src="assets/preview-home.png"
+         alt="VALORANT Personalized Sensitivity Generator"
+         width="100%">
+  </a>
+</div>
+
+<p align="center">
+  <b>🎮 点击图片即可在线体验 / Click the image to try it online</b>
+</p>
+
+输入 DPI、当前灵敏度、鼠标垫空间、鼠标重量、握持方式与瞄准习惯，建立个人瞄准基准。
+
+---
+
+### 🎯 Built-in Aim Tests / 内嵌瞄准测试
+
+<div align="center">
+  <img src="assets/preview-aim-test.png"
+       alt="VALORANT Sensitivity Generator Aim Test"
+       width="100%">
+</div>
+
+通过 Flick、微调控制、动态追踪和左右换向等测试分析真实鼠标控制表现。
+
+部分测试采用 **Hover to Hit** 机制，准星触碰目标即可完成命中，无需点击。
+
+---
+
+### 🎮 Personalized Result / 个性化灵敏度结果
+
+<div align="center">
+  <img src="assets/preview-result.png"
+       alt="VALORANT Personalized Sensitivity Result"
+       width="100%">
+</div>
+
+完成测试后，系统会综合测试表现生成推荐的 **VALORANT Sensitivity、eDPI 与 cm/360°**，同时提供精准型、平衡型与速度型灵敏度参考。
+
+---
+
 ## 📖 About / 项目简介
 
 **VALORANT Personalized Sensitivity Generator** 是一个专为《VALORANT / 无畏契约》玩家设计的个性化鼠标灵敏度测试与生成工具。
@@ -59,12 +105,13 @@
 * 📊 测试结果统计
 * 👆 部分测试支持鼠标触碰目标自动触发，无需点击
 * 🧠 根据多项测试表现综合计算
-* 🎮 输出 VALORANT 推荐 Sensitivity
+* 🎮 输出可直接用于 VALORANT 的 Sensitivity
 * 🖱️ 支持 DPI / Sensitivity / eDPI 计算
 * 📏 提供 cm/360° 灵敏度参考
 * 🌐 浏览器直接运行
 * 📦 无需安装额外程序
 * 🚀 支持 GitHub Pages 在线部署
+* 🔒 本地计算，不上传测试成绩
 
 ---
 
@@ -121,7 +168,7 @@ VALORANT 游戏中的鼠标瞄准灵敏度。
 
 ### eDPI
 
-eDPI 是用于综合表示鼠标 DPI 与游戏灵敏度的常用指标：
+eDPI 是综合表示鼠标 DPI 与游戏灵敏度的常用指标：
 
 ```text
 eDPI = Mouse DPI × VALORANT Sensitivity
@@ -259,6 +306,11 @@ index.html
 ```text
 valorant-sensitivity-generator/
 │
+├── assets/
+│   ├── preview-home.png
+│   ├── preview-aim-test.png
+│   └── preview-result.png
+│
 ├── index.html
 ├── README.md
 ├── LICENSE
@@ -277,6 +329,10 @@ Sensitivity Calculation
 Result Display
 ```
 
+### `assets/`
+
+项目预览截图及后续静态资源。
+
 ### `README.md`
 
 项目介绍、使用方法和开发说明。
@@ -288,31 +344,6 @@ Apache License 2.0 完整许可证。
 ### `NOTICE`
 
 项目作者、原始项目地址及 Attribution / 署名信息。
-
----
-
-## 📸 Screenshots / 项目截图
-
-项目界面截图可在后续版本中补充。
-
-推荐在仓库中新建：
-
-```text
-assets/
-```
-
-例如：
-
-```text
-assets/
-└── preview.png
-```
-
-然后在 README 中添加：
-
-```markdown
-![VALORANT Sensitivity Generator](assets/preview.png)
-```
 
 ---
 
@@ -408,6 +439,8 @@ Aim Style
 Training
 Physical Condition
 ```
+
+等多种因素影响。
 
 ---
 
